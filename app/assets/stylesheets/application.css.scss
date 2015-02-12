@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Lobster);
 
 .user-info {
   margin-top: 9px;
@@ -6,4 +7,15 @@
 
 .nav {
   margin-top: 5px;
+}
+
+.btn, h1, h2, h3, h4, h5, h6{
+  font-family:Lobster;
+}
+
+.btn{
+  letter-spacing:1px;
+}
+.jumbotron{
+  background-color: #dff0d8;
 }
