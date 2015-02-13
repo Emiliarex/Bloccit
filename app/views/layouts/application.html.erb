@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bloccit</title>
+  <title>Emily's Amazing World</title>
     <%= stylesheet_link_tag    "application", media: "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
@@ -9,7 +9,7 @@
 <body>
   <div class="container"> 
   <ul class="nav nav-tabs">
-    <li><%= link_to "Bloccit", root_path %></li>
+    <li><%= link_to "Home", root_path %></li>
     <li><%= link_to "About", about_path %></li>
     
       <div class="pull-right user-info">
@@ -42,4 +42,20 @@
 <%= yield %>
   </div>
 </body>
+
+<style>
+  /* unvisited link */
+  a:link{
+    color: #00BFFF;
+  }
+  /* visited link */
+  a:visited {
+    color: red;
+   }
+  /* mouse over link */
+  a:hover{
+    color: #00FF00;
+  }
+  </style>
+    
 </html>

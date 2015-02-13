@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 @import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url(http://fonts.googleapis.com/css?family=Special+Elite);
 
 .user-info {
   margin-top: 9px;
@@ -8,6 +9,13 @@
 
 .nav {
   margin-top: 5px;
+  font-style: italic;
+  font-weight: bold;
+  
+}
+
+.nav_color{
+  color: #0000FF;
 }
 
 .btn, h2, h3, h4, h5, h6{
@@ -28,10 +36,13 @@ h1{
 
 
 /*------------------------------------------------------------------*/
-/*-----------------------------   Post STyles ---------------------------*/
+/*-----------------------------   Post Styles ---------------------------*/
 
 
 
-.bananas{
-  font-family: Permanent Marker;
+.post_link{
+  font-family: Special Elite;
+  font-style: normal;
+  font-weight: bold;
+  color: #9ACD32;
 }

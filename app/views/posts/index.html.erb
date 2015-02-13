@@ -2,11 +2,11 @@
 <% @posts.each do |post| %>
 <div class="media">
  <div class="media-body">
-   <h4 class="media-heading bananas" >
+   <h4 class="media-heading post_link" >
      <%= link_to post.title, post %>
      </h4>
        <small>
-         submitted <%= time_ago_in_words(post.created_at) %> ago by <%= post.user.name %><br/>
+         Check out this post that was submitted <%= time_ago_in_words(post.created_at) %> ago by <%= post.user.name %>!<br/>
          <%= post.comments.count %> Comments
    </small>
   </div>
