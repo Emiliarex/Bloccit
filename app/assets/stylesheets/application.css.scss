@@ -2,6 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 @import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
 @import url(http://fonts.googleapis.com/css?family=Special+Elite);
+@import url(http://fonts.googleapis.com/css?family=Kaushan+Script);
 
 .user-info {
   margin-top: 9px;
@@ -10,12 +11,24 @@
 .nav {
   margin-top: 5px;
   font-style: italic;
-  font-weight: bold;
+  font-weight: bold; 
   
 }
-
-.nav_color{
-  color: #0000FF;
+ 
+.nav a{
+  font-variant: medium-caps;
+}
+   /* unvisited link */
+.nav a:link{
+    color: #00BFFF;
+  }
+  /* visited link */
+.nav a:visited {
+    color: red;
+   }
+  /* mouse over link */
+.nav a:hover{
+    color: #BA2F00;
 }
 
 .btn, h2, h3, h4, h5, h6{
@@ -30,6 +43,7 @@ h1{
   letter-spacing:1px;
  font-size: 20px;
 }
+
 .jumbotron{
   background-color: #dff0d8;
 }
@@ -38,7 +52,11 @@ h1{
 /*------------------------------------------------------------------*/
 /*-----------------------------   Post Styles ---------------------------*/
 
-
+.post_title {
+  font-family: Kaushan Script;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
 
 .post_link{
   font-family: Special Elite;
@@ -46,3 +64,16 @@ h1{
   font-weight: bold;
   color: #9ACD32;
 }
+
+ /* unvisited link */
+  a:link{
+    color: #00BFFF;
+  }
+  /* visited link */
+  a:visited {
+    color: red;
+   }
+  /* mouse over link */
+  a:hover{
+    color: #00FF00;
+  }
