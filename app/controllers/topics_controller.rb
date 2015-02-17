@@ -5,12 +5,13 @@ class TopicsController < ApplicationController
   end
 
   def new
-    @topic = Topic.all
+    @topic = Topic.new
     authorize @topic
   end
 
   def show
     @topic = Topic.find(params[:id])
+      @posts = @topic.posts
     authorize @topic
   end
 
