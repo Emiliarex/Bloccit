@@ -46,7 +46,8 @@ posts = Post.all
   Comment.create!(
     # user: users.sample,   #we have not yet associated Users with Comments
     post: posts.sample,
-    body: Faker::Lorem.paragraph
+    body: Faker::Lorem.paragraph,
+    user:  users.sample
     )
 end
 
