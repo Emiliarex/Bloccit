@@ -10,10 +10,12 @@ class CommentsController < ApplicationController
     @comment.user_id = current_user.id
     if @comment.save
       flash[:notice] = "Comment successfully created"
+      redirect_to [@topic, @post]
     else
       flash[:error] = "Comment exploded"
-    end
       redirect_to [@topic, @post]
+    end
+      
   end
   
   def destroy
