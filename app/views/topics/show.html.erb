@@ -4,7 +4,7 @@
 <% end %>
 
     <% if policy(Post.new).create? %>
-    <%= link_to "New Post", new_topic_post_path(@topic), class: 'btn btn-danger' %>
+    <%= link_to "New Post", new_topic_post_path(@topic), class: 'btn btn-info' %>
     <% end %>
 
 <% if policy(@topic).destroy? %>
