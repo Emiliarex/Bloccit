@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150303002253) do
+ActiveRecord::Schema.define(version: 20150306230940) do
 
   create_table "comments", force: true do |t|
     t.text     "body"
@@ -42,6 +42,10 @@ ActiveRecord::Schema.define(version: 20150303002253) do
     t.integer  "user_id"
     t.integer  "topic_id"
     t.float    "rank"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
   add_index "posts", ["topic_id"], name: "index_posts_on_topic_id"
