@@ -3,7 +3,7 @@ class FavoritesController < ApplicationController
   def create
     @post = Post.find(params[:post_id])
     favorite = current_user.favorites.build(post: @post)
-    authorize @favorite
+    
     
     if favorite.save
       flash[:notice] = "Post was favorited"
