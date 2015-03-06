@@ -53,6 +53,8 @@ gem 'will_paginate', '~> 3.0.5'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
+  gem 'capybara'
+  gem 'database_cleaner'
 end
 
 # Use ActiveModel has_secure_password

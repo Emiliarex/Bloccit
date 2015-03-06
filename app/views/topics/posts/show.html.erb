@@ -34,16 +34,21 @@
 <div class="row">
     <div class="col-md-8">
      
-    
+      <h2>Comments</h2>
+      <div class='js-comments'>
+      </div>
       
       <% @comments.each do |c| %>
     
       <%= render partial: "comments/comments", locals: {comment: c} %>
       <% end %>
   </div>
+      <div class='new-comment'>
   
   <div class="col-md-5">
     <%= render partial: "comments/form", locals: {topic: @topic, post: @post} %>
   </div>
+        
+      </div>
   
 </div>
