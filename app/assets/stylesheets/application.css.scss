@@ -6,6 +6,10 @@
 @import url(https://fonts.googleapis.com/css?family=Special+Elite);
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
 
+body {
+    background: linear-gradient(to right, rgba(165,237,92,.18), rgba(165,237,92,.18)); /*Standard*/
+
+}
 .user-info {
   margin-top: 9px;
 }
@@ -55,7 +59,7 @@ h1{
 }
 
 .jumbotron{
-  background-color: #dff0d8;
+  background-color: #CCEDED;
 }
 
 
@@ -111,4 +115,10 @@ h1{
 
 .favorite {
   margin-top: 20px;
+}
+
+.lead {
+  font-family: Kaushan Script;
+  font-weight: bold;
+  
 }
